@@ -92,7 +92,7 @@ class PetFriends:
         return status, result
 
     def add_new_pet_photo(self, auth_key: json, pet_id: str, pet_photo: str) -> json:
-        """Метод отправляет (постит) на сервер данные о фото добавляемом питомце и возвращает статус
+        """Метод отправляет (постит) на сервер данные о фото добавленного ранее питомце и возвращает статус
         запроса на сервер и результат в формате JSON с данными питомца"""
 
         data = {'pet_photo': (pet_photo, open(pet_photo, 'rb'), 'image/jpeg')}
